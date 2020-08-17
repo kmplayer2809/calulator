@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caluculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main-wrapper">
+        <div id="op-history-container" class="hide"></div>
+
+        <div class="inputs-wrapper">
+            <i class="fas fa-history" id="toggle-history"></i>
+            <input type="text" id="input-top">
+            <input type="text" id="input-bottom" placeholder="0">
+        </div>
+
+        <div class="gradient-divider"></div>
+
+        <div class="row">
+            <div data-set="7" class="num">7</div>
+            <div data-set="8" class="num">8</div>
+            <div data-set="9" class="num">9</div>
+            <div data-set="/" class="op">÷</div>
+        </div>
+
+        <div class="row">
+            <div data-set="4" class="num">4</div>
+            <div data-set="5" class="num">5</div>
+            <div data-set="6" class="num">6</div>
+            <div data-set="*" class="op">x</div>
+        </div>
+
+        <div class="row">
+            <div data-set="1" class="num">1</div>
+            <div data-set="2" class="num">2</div>
+            <div data-set="3" class="num">3</div>
+            <div data-set="-" class="op">-</div>
+        </div>
+
+        <div class="row">
+            <div class="num" id="reset">C</div>
+            <div data-set="0" class="num">0</div>
+            <div data-set="." class="num">.</div>
+            <div data-set="+" class="op">+</div>
+        </div>
+
+        <div id="equal" data-set="=">
+            =
+        </div>
+    </div>
+
+    <p class="disclaimer" style="opacity: .8; letter-spacing: 1px; font-size: 16px;">Copy code by <a
+            href="https://devforum.info" target="_blank"><span style="font-family: 'Pacifico'"> Dĩ Huỳnh</span></a>.</p>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
